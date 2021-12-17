@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "JŽK",
+  "version": "1.0",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{660237a2-d59c-445d-8a40-649ab867ad43}"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.cd.cz/eshop/*", "https://www.cd.cz/spojeni-a-jizdenka/*"],
+      "css": ["jzk.css"],
+      "js": ["jzk.js"]
+    }
+  ],
+  "permissions": [
+    "http://jzk.cd.cz/*",
+    "storage"
+  ]
+}
